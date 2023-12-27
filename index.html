@@ -3,17 +3,26 @@
 <head>
     <title>Thời trang 2024</title>
     <style>
+        @keyframes blink {
+            0% {opacity: 1;}
+            50% {opacity: 0.5;}
+            100% {opacity: 1;}
+        }
         body {
-            background-color: #f0f0f0;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         h1 {
             font-size: 3em;
-            color: #333;
+            animation: blink 2s infinite;
         }
     </style>
 </head>
