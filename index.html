@@ -1,3 +1,8 @@
+Dưới đây là một phiên bản nâng cấp của trang web với hiệu ứng nhấp nháy sao nhẹ và màu sắc theo xu hướng năm 2024. Trang web này sẽ hiển thị thông báo “Comming soon in 2024” với hiệu ứng nhấp nháy.
+
+HTML
+AI-generated code. Review and use carefully. More info on FAQ.
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +14,7 @@
             100% {opacity: 1;}
         }
         body {
-            background: linear-gradient(to right, #ff9966, #ff5e62);
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Trend color 2024 */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,14 +24,32 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
         }
         h1 {
             font-size: 3em;
+            animation: blink 2s infinite;
+        }
+        .stars {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 5px #fff;
+            border-radius: 50%;
             animation: blink 2s infinite;
         }
     </style>
 </head>
 <body>
     <h1>Comming soon in 2024</h1>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
 </body>
 </html>
